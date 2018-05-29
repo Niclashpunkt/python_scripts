@@ -1,6 +1,6 @@
-def greeting(name, currentTime):
+import time
 
-    import time
+def greeting(name, currentTime):
 
     if currentTime is "":
         currentTime = int(time.strftime("%H"))
@@ -10,5 +10,7 @@ def greeting(name, currentTime):
     if currentTime < 14:
         print("Have a nice day, "+name+"!")
 
-    elif currentTime > 13:
+    else:
         print("Bonsoir, "+name+"!")
+
+greeting("Niclas","")
